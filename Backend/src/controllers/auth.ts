@@ -9,6 +9,8 @@ import User from "../models/user";
 // @access Public
 const Login = async (req: Request, res: Response) => {
   const errors = validationResult(req);
+  console.log(errors);
+  
   if (!errors.isEmpty()) {
     return res.status(400).json({ message: errors.array() });
   }
