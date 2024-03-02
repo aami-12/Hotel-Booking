@@ -1,0 +1,8 @@
+20240109	14:24:14	5d866376-343d-4ef8-95ab-c234be39cf5c	Error: Not allowed by CORS	OPTIONS	/api/new	https://www.google.co.in
+20240109	14:24:14	afce45fa-390c-4ff7-81b4-f5579c3ed079	Error: Not allowed by CORS	GET	/api/new	https://www.google.co.in
+20240111	22:16:14	d03b153e-6ff9-41b1-beaf-5b167edab283	SyntaxError: Unexpected token } in JSON at position 31	POST	/api/auth/login	undefined
+20240111	22:47:36	14151b4f-0205-4fd8-8839-fd997a044c7a	Error: Not allowed by CORS	OPTIONS	/api/auth/login	http://localhost:5173
+20240111	22:48:34	db4d9fc2-5273-471c-9cb2-4e277982770a	Error: Not allowed by CORS	OPTIONS	/api/auth/login	http://localhost:5173
+20240215	16:07:59	83eab37a-40f6-42e7-9a0c-d2d6d6418884	MulterError: File too large	POST	/api/my-hotels	http://localhost:5173
+20240215	16:12:46	3f204994-95be-40a8-99e6-70a8b7d7e1f6	MulterError: File too large	POST	/api/my-hotels	http://localhost:5173
+20240223	11:21:16	36174221-a03a-4ed8-adde-cc7110038c29	Error: You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.	POST	/api/hotels/6566072befbb78591fadc606/bookings/payment-intent	http://localhost:5173
