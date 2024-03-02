@@ -9,7 +9,7 @@ import errorHandler from "./middlewares/errorHandler";
 import corsOptions from "./config/corsOption";
 import cookieParser from "cookie-parser";
 import { v2 as cloudinary } from "cloudinary";
-import rootFile from "./routes/root";
+// import rootFile from "./routes/root";
 import userRoutes from "./routes/users";
 import authRoutes from "./routes/auth";
 import myHotelRoutes from "./routes/my-hotels";
@@ -33,7 +33,7 @@ app.use(cors(corsOptions));
 
 app.use("/", express.static(path.join(__dirname, "public")));
 
-app.use("/", rootFile);
+// app.use("/", rootFile);
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/my-hotels", myHotelRoutes);
