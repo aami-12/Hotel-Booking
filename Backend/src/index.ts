@@ -9,14 +9,12 @@ import errorHandler from "./middlewares/errorHandler";
 import corsOptions from "./config/corsOption";
 import cookieParser from "cookie-parser";
 import { v2 as cloudinary } from "cloudinary";
-
 import rootFile from "./routes/root";
 import userRoutes from "./routes/users";
 import authRoutes from "./routes/auth";
 import myHotelRoutes from "./routes/my-hotels";
 import HotelRoutes from "./routes/hotels";
 import BookingRoutes from "./routes/my-bookings";
-
 import path from "path";
 
 const app = express();
