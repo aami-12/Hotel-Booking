@@ -1,6 +1,6 @@
 const allowedOrigins = [
     'http://localhost:5173',
-    'https://hotelbooking.onrender.com'
+    'https://hotelbooking-doie.onrender.com'
 ]
 
 export default allowedOrigins

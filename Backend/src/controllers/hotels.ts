@@ -1,11 +1,26 @@
 import { Request, Response } from "express";
 import Hotel from "../models/hotel";
 import { BookingType, HotelSearchResponse } from "../sharedTypes/types";
-import { SearchParams } from "../../src/../../Frontend/src/api-client";
+
 import { validationResult } from "express-validator";
 import Stripe from "stripe";
 
+
 const stripe = new Stripe(process.env.STRIPE_API_KEY as string);
+
+export type SearchParams = {
+  destination?: string;
+  checkIn?: string;
+  checkOut?: string;
+  adultCount?: string;
+  childCount?: string;
+  page?: string;
+  facilities?: string[];
+  types?: string[];
+  stars?: string[];
+  maxPrice?: string;
+  sortOption?: string;
+}
 
 const constructSearchQuery = (queryParams: SearchParams) => {
   let constructedQuery: any = {};
