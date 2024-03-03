@@ -32,7 +32,7 @@ app.use(express.json());
 app.use(cors(corsOptions));
 
 // app.use("/", express.static(path.join(__dirname, "public")));
-app.use("/",express.static(path.join(__dirname, "../../Frontend/dist")));
+app.use(express.static(path.join(__dirname, "../../Frontend/dist")));
 // app.use("/", rootFile);
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
