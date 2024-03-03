@@ -2,7 +2,7 @@ import { SignInFormData } from "./Pages/Signin";
 import { RegisterFormData } from "./Pages/Register";
 import { HotelSearchResponse, HotelType, PaymentIntentResponse, UserType } from "../../Backend/src/sharedTypes/types";
 import { BookingFormData } from "./forms/BookingForm/BookingForm";
-const API_BASE_URL = "https://hotelbooking-apis.onrender.com" || "";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "";
 
 
 export const fetchCurrentUser = async () : Promise<UserType> => {
